@@ -1,0 +1,54 @@
+em.text {
+
+}
+
+section {
+
+}
+
+.jumbotron-headings{
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOXX7fPjlw_F_kEiuM3qOQDcI7--4hAYBbe5hhsBH7TFg6G0yIE7OBkOU");
+	background-size: cover;
+	color:#fff;
+	height: 600px;
+}
+
+.jumbotron h1{
+	margin-top: 20px;
+}
+
+.jumbotron p{
+	margin-bottom: 100px;
+}
+
+
+.jumbotron .showcase-img{
+	height: 500px;
+	background-image: Url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN4QKuM-uCvxnHaGcN1mRf9HmCfDMqUAfcVbeuHqqKAlkAc9LTmg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.jumbotron .conditioner{
+	width:100%;
+	padding:3px;
+	border: 3px solid #ccc;
+}
+
+.jumbotron .container{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.jumbotron.jumbotron-items {
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+

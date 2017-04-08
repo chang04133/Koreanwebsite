@@ -1,12 +1,8 @@
-:host {
-  padding: 2rem 1rem;
-  flex-direction: row;
-  display: flex;
+.em-text {
+	color:#1caa98 ;
 }
 
-#tabs {
-  flex: 1;
-  justify-content: space-around;
-  flex-direction: row;
-  display: flex;
+.abc {
+	float: right;
+	margin-left: 300px;
 }

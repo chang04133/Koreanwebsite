@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Angular QuickStart</title>
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyD9QTmqNWEFThtPF5t2F6_Oah3DOjwijzk",
+        authDomain: "my-awful-project-fd9a2.firebaseapp.com",
+        databaseURL: "https://my-awful-project-fd9a2.firebaseio.com",
+        storageBucket: "my-awful-project-fd9a2.appspot.com",
+        messagingSenderId: "1074297456888"
+      };
+      firebase.initializeApp(config);
+    </script>
 
     <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>

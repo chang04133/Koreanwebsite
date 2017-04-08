@@ -1,5 +1,7 @@
+import { Http } from '@angular/http';
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
+import { UserService } from './user.service';
 
 @Component({
   selector: 'app-header',
@@ -7,11 +9,26 @@ import { Component } from '@angular/core';
   styleUrls: ['app/header.component.css']
 })
 export class HeaderComponent  {
-	private tabs = ["TAB1", "TAB2", "TAB3"];
-
-	constructor() {
-				this.tabs = ["TAB1", "TAB2", "TAB3"]
+	private register: boolean;
+	private tabs : string[];
+	constructor(private userService: UserService) {
+				this.tabs = ["Introduction", "Product Information", "Research and Dev.", "Quality Assurance",
+				"Machines Information", "Administration Support"]
 	}
+
+
+	login(form: any, event: any){
+		event.preventDefault();
+		if(this.register){
+			this.userService.register(form.controls.user.value, form.controls.pass.value);
+		} else {
+			var newUser = this.userService.login(form.controls.user.value, form.controls.pass.value); 
+			console.log(newUser);
+		}
+		this.register = false;
+		return false;
+	}
+
 
 	 
 }
